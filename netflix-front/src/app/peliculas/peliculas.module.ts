@@ -4,6 +4,8 @@ import { ListarPeliculasComponent } from './listar-peliculas/listar-peliculas.co
 import { VerPeliculaComponent } from './ver-pelicula/ver-pelicula.component';
 import { PeliculaService } from './peliculas.service';
 import { HttpClientModule } from '@angular/common/http';
+import {VgCoreModule} from "videogular2/compiled/src/core/core";
+import {VgControlsModule} from "videogular2/compiled/src/controls/controls";
 
 @NgModule({
   declarations: [
@@ -12,7 +14,9 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    VgCoreModule,
+    VgControlsModule
   ],
   providers: [
     PeliculaService

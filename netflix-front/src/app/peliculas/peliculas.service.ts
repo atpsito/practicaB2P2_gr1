@@ -11,4 +11,8 @@ export class PeliculaService{
     consultarPeliculas(){
         return this._httpClient.get(environment.url+environment.port+'/pelicula/lista')
     }
+
+    obtenerSrcPelicula(idPelicula){
+      return environment.url+environment.port+'/pelicula/'+idPelicula;
+    }
 }

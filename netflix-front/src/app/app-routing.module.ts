@@ -9,7 +9,7 @@ const routes: Routes = [
     component:ListarPeliculasComponent
   },
   {
-    path:':id',
+    path:'play/:id',
     component: VerPeliculaComponent
   },
   {
@@ -20,7 +20,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{useHash: true})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

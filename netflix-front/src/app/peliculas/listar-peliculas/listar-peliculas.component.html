@@ -1,5 +1,9 @@
 <div class="container-fluid">
-    <div *ngFor="let pelicula of peliculas">
-        <div class="col-sm-2">2</div>
+  <div class="row">
+    <div class="col-sm-2" *ngFor="let pelicula of peliculas">
+      <button class="btn" (click)="irReproductor(pelicula.id)">
+        <img class="cover" src="{{pelicula.img}}" alt="">
+      </button>
     </div>
+  </div>
 </div>
